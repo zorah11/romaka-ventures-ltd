@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Discuss a sourcing or business requirement with Romaka Ventures Ltd in Kampala."
+    />
+    <title>Contact | Romaka Ventures Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="inner-page rv-contact-page">
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="logo" href="index.html"
+        ><i>R</i><span>Romaka<br /><small>Ventures Ltd</small></span></a
+      ><button class="menu" aria-controls="nav" aria-expanded="false">
+        Menu
+      </button>
+      <nav id="nav">
+        <a href="capabilities.html">Capabilities</a
+        ><a href="index.html#approach">Approach</a
+        ><a href="about.html">Company</a
+        ><a aria-current="page" class="contact-link" href="contact.html"
+          >Talk to us</a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="rv-contact-intro">
+        <p class="kicker">Kampala, Uganda</p>
+        <h1>Start with the requirement.</h1>
+        <p>
+          Share what you need, the approximate quantities and your timeline.
+          We’ll respond with focused questions and a practical next step.
+        </p>
+      </section>
+      <section class="contact rv-contact-full">
+        <div>
+          <p class="kicker">Useful details to include</p>
+          <ul>
+            <li>Item or service description</li>
+            <li>Quantities or scope</li>
+            <li>Required delivery date</li>
+            <li>Delivery location</li>
+          </ul>
+        </div>
+        <form id="contact-form">
+          <div class="pair">
+            <label
+              >Your name<input
+                name="name"
+                required
+                autocomplete="name" /></label
+            ><label
+              >Organisation<input name="company" autocomplete="organization"
+            /></label>
+          </div>
+          <div class="pair">
+            <label
+              >Phone<input
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel" /></label
+            ><label
+              >Email<input name="email" type="email" autocomplete="email"
+            /></label>
+          </div>
+          <label
+            >Requirement<textarea
+              name="message"
+              rows="5"
+              required
+              placeholder="Items, quantities, delivery timing…"
+            ></textarea></label
+          ><button type="submit">Send requirement <span>→</span></button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="index.html"
+        ><i>R</i><span>Romaka<br /><small>Ventures Ltd</small></span></a
+      >
+      <p>Kampala, Uganda</p>
+      <p>© <span data-year></span> Romaka Ventures Ltd</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

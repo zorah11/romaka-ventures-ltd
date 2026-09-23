@@ -20,7 +20,7 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
-document.querySelector("#contact-form").addEventListener("submit", (e) => {
+document.querySelector("#contact-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   e.currentTarget.querySelector(".form-status").textContent =
     "Thank you — this sample form is ready to connect to Romaka’s preferred inbox.";
