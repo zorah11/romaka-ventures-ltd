@@ -20,10 +20,20 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
+const whatsapp = document.createElement("a");
+whatsapp.className = "whatsapp-float";
+whatsapp.href = "https://wa.me/256702733634";
+whatsapp.target = "_blank";
+whatsapp.rel = "noopener";
+whatsapp.setAttribute("aria-label", "Chat with Romaka Ventures on WhatsApp");
+whatsapp.textContent = "WhatsApp";
+document.body.append(whatsapp);
 document.querySelector("#contact-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   const data = new FormData(e.currentTarget);
-  const subject = encodeURIComponent(`Website enquiry from ${data.get("name")}`);
+  const subject = encodeURIComponent(
+    `Website enquiry from ${data.get("name")}`,
+  );
   const body = encodeURIComponent(
     `Name: ${data.get("name")}\nOrganisation: ${data.get("company") || "Not provided"}\nPhone: ${data.get("phone")}\nEmail: ${data.get("email") || "Not provided"}\n\nMessage:\n${data.get("message")}`,
   );
