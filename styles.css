@@ -390,7 +390,23 @@ header nav a {
   max-height: 570px;
   object-fit: cover;
   justify-self: center;
-  clip-path: inset(0 8% round 44% 44% 8% 8%);
+  clip-path: polygon(
+    11% 5%,
+    89% 5%,
+    93% 8%,
+    93% 14%,
+    86% 18%,
+    93% 25%,
+    96% 91%,
+    91% 97%,
+    9% 97%,
+    4% 91%,
+    7% 25%,
+    14% 18%,
+    7% 14%,
+    7% 8%
+  );
+  filter: drop-shadow(0 24px 24px rgba(61, 46, 12, 0.18));
 }
 .featured-product dl {
   display: flex;
@@ -790,7 +806,23 @@ header nav a {
   max-height: 520px;
   object-fit: cover;
   object-position: center;
-  clip-path: inset(0 7% 0 7% round 45% 45% 8% 8%);
+  clip-path: polygon(
+    11% 5%,
+    89% 5%,
+    93% 8%,
+    93% 14%,
+    86% 18%,
+    93% 25%,
+    96% 91%,
+    91% 97%,
+    9% 97%,
+    4% 91%,
+    7% 25%,
+    14% 18%,
+    7% 14%,
+    7% 8%
+  );
+  filter: drop-shadow(0 24px 24px rgba(61, 46, 12, 0.18));
 }
 .product-story figcaption {
   position: relative;
