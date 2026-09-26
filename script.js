@@ -22,6 +22,12 @@ document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
 document.querySelector("#contact-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
+  const data = new FormData(e.currentTarget);
+  const subject = encodeURIComponent(`Website enquiry from ${data.get("name")}`);
+  const body = encodeURIComponent(
+    `Name: ${data.get("name")}\nOrganisation: ${data.get("company") || "Not provided"}\nPhone: ${data.get("phone")}\nEmail: ${data.get("email") || "Not provided"}\n\nMessage:\n${data.get("message")}`,
+  );
   e.currentTarget.querySelector(".form-status").textContent =
-    "Thank you — this sample form is ready to connect to Romaka’s preferred inbox.";
+    "Opening your email app to send this message to Romaka.";
+  window.location.href = `mailto:romakainvestments@gmail.com?subject=${subject}&body=${body}`;
 });

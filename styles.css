@@ -1,9 +1,9 @@
 :root {
-  --navy: #102438;
-  --blue: #245977;
-  --sky: #c9dce3;
+  --navy: #15382f;
+  --blue: #227b60;
+  --sky: #cfe5d8;
   --paper: #f4f2ec;
-  --orange: #dc6a33;
+  --orange: #dc7139;
   --ink: #151b20;
   --line: rgba(21, 27, 32, 0.2);
   --sans: "Archivo", Arial, sans-serif;
@@ -70,6 +70,12 @@ header {
   font-size: 0.55rem;
   font-weight: 500;
   opacity: 0.75;
+}
+.logo img {
+  display: block;
+  width: 118px;
+  height: 54px;
+  object-fit: cover;
 }
 header nav {
   display: flex;
@@ -211,10 +217,10 @@ header nav a {
   max-width: 610px;
 }
 .about-hero {
-  background-image: url("assets/client-agreement.png");
+  background-image: url("assets/romaka-team.jpeg");
 }
 .capability-hero {
-  background-image: url("assets/warehouse-check.png");
+  background-image: url("assets/pineapple-farm.jpeg");
   background-position: center 42%;
 }
 .rv-story {
@@ -251,6 +257,50 @@ header nav a {
 .rv-principles h3 {
   font-size: 1.35rem;
   margin: 1.2rem 0 0.5rem;
+}
+.rv-team {
+  padding: 8rem 7vw;
+}
+.rv-team-intro {
+  max-width: 900px;
+  margin-bottom: 4rem;
+}
+.rv-team-intro h2,
+.rv-partners h2 {
+  font: clamp(3rem, 5.5vw, 6rem) / 0.92 var(--serif);
+  font-weight: 400;
+  margin: 0.6rem 0 2rem;
+}
+.rv-team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+}
+.rv-team-grid article {
+  padding: 2.5rem 3rem 2.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.rv-team-grid article:nth-child(even) {
+  padding-left: 3rem;
+  border-left: 1px solid var(--line);
+}
+.rv-team-grid h3 {
+  font: 2rem/1.1 var(--serif);
+  margin: 0 0 0.5rem;
+}
+.rv-team-grid b {
+  color: var(--blue);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.rv-partners {
+  padding: 8rem 7vw;
+  background: var(--sky);
+}
+.rv-partners > p:last-child {
+  max-width: 800px;
+  font-size: 1.08rem;
 }
 .rv-cta {
   padding: 8rem 7vw;
@@ -319,6 +369,18 @@ header nav a {
     border-left: 0;
     border-top: 1px solid var(--line);
     padding: 2rem 0;
+  }
+  .rv-team,
+  .rv-partners {
+    padding: 6rem 1.3rem;
+  }
+  .rv-team-grid {
+    grid-template-columns: 1fr;
+  }
+  .rv-team-grid article,
+  .rv-team-grid article:nth-child(even) {
+    padding: 2rem 0;
+    border-left: 0;
   }
   .rv-cta {
     padding: 6rem 1.3rem;

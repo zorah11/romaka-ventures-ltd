@@ -1,5 +1,5 @@
 # Romaka Ventures Ltd — sample website
 
-A responsive, single-page sample site positioning Romaka as a procurement, general-supplies and enterprise-support company in Uganda.
+A responsive multi-page site presenting Romaka as a horticultural agribusiness and farmer-support company in Masaka, Uganda.
 
-The service copy is intentionally easy to refine after the client confirms their exact scope. Connect the demo form to the client's preferred inbox before launch.
+The company information, contact details, impact figures and photography are based on `Romaka website information.docx`. The contact form opens a pre-addressed email in the visitor's email application.
