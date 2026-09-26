@@ -73,15 +73,14 @@ header {
 }
 .logo img {
   display: block;
-  width: 132px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 2px;
+  width: 128px;
+  height: 62px;
+  object-fit: contain;
 }
 header nav {
   display: flex;
   align-items: center;
-  gap: 2.3rem;
+  gap: 1.7rem;
 }
 header nav a {
   color: inherit;
@@ -113,15 +112,15 @@ header nav a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 58% center;
 }
 .shade {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(8, 22, 34, 0.28),
-    rgba(8, 22, 34, 0.84)
+    rgba(7, 31, 22, 0.88),
+    rgba(7, 31, 22, 0.18) 68%
   );
 }
 .hero-grid {
@@ -134,7 +133,7 @@ header nav a {
   align-items: center;
 }
 .hero-copy {
-  grid-column: 2;
+  grid-column: 1;
   max-width: 650px;
 }
 .kicker {
@@ -144,7 +143,7 @@ header nav a {
   font-weight: 700;
 }
 .hero h1 {
-  font: clamp(5rem, 9vw, 9rem) / 0.76 var(--sans);
+  font: clamp(4.8rem, 8vw, 8rem) / 0.78 var(--sans);
   letter-spacing: -0.075em;
   text-transform: uppercase;
   margin: 1rem 0 2rem;
@@ -219,6 +218,22 @@ header nav a {
 }
 .about-hero {
   background-image: url("assets/romaka-team.jpeg");
+}
+.products-hero {
+  background-image: url("assets/jam-production.jpeg");
+  background-position: center 44%;
+}
+.farmers-hero {
+  background-image: url("assets/pineapple-farm.jpeg");
+  background-position: center 42%;
+}
+.impact-hero {
+  background-image: url("assets/farmer-partnership.jpeg");
+  background-position: center 48%;
+}
+.partners-hero {
+  background-image: url("assets/romaka-team.jpeg");
+  background-position: center 38%;
 }
 .capability-hero {
   background-image: url("assets/pineapple-farm.jpeg");
@@ -348,6 +363,188 @@ header nav a {
 .rv-contact-full ul {
   padding-left: 1.2rem;
   line-height: 2.3;
+}
+.product-grid {
+  padding: 8rem 7vw;
+  display: grid;
+  gap: 7rem;
+}
+.featured-product,
+.produce-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 8vw;
+}
+.featured-product h2,
+.produce-card h2,
+.section-intro h2,
+.impact-narrative h2,
+.partner-list h2 {
+  font: clamp(3rem, 5.5vw, 6rem) / 0.92 var(--serif);
+  font-weight: 400;
+  margin: 0.6rem 0 1.5rem;
+}
+.featured-product img {
+  width: min(420px, 100%);
+  max-height: 570px;
+  object-fit: cover;
+  justify-self: center;
+  clip-path: inset(0 8% round 44% 44% 8% 8%);
+}
+.featured-product dl {
+  display: flex;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+.featured-product dl div {
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+.featured-product dt {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.featured-product dd {
+  margin: 0.35rem 0 0;
+  font-weight: 700;
+}
+.produce-card {
+  background: var(--sky);
+}
+.produce-card img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+.produce-card > div {
+  padding: 3rem 5vw 3rem 0;
+}
+.farmer-journey,
+.partner-list {
+  padding: 8rem 7vw;
+}
+.section-intro {
+  max-width: 850px;
+  margin-bottom: 4rem;
+}
+.farmer-journey ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.farmer-journey li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: 2.5rem;
+  border: 1px solid var(--line);
+  margin: -1px 0 0 -1px;
+}
+.farmer-journey li b {
+  color: var(--blue);
+  font-size: 0.68rem;
+}
+.farmer-journey h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.photo-story {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  min-height: 650px;
+  background: var(--navy);
+  color: #fff;
+}
+.photo-story img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-story > div {
+  padding: 7vw;
+  align-self: center;
+}
+.photo-story h2 {
+  font: clamp(3rem, 5vw, 5.5rem) / 0.95 var(--serif);
+  font-weight: 400;
+}
+.impact-page-stats {
+  padding: 8rem 7vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.impact-page-stats article {
+  padding: 3rem;
+  border-left: 1px solid var(--line);
+}
+.impact-page-stats strong {
+  font: clamp(4rem, 7vw, 7rem) / 1 var(--serif);
+  color: var(--blue);
+}
+.impact-page-stats h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.impact-narrative {
+  padding: 8rem 7vw;
+  background: var(--sky);
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 8vw;
+}
+.impact-outcomes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.impact-outcomes article {
+  padding: 2rem;
+  border: 1px solid var(--line);
+  margin: -1px 0 0 -1px;
+}
+.impact-outcomes span {
+  color: var(--blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+}
+.source-note {
+  padding: 1.5rem 7vw;
+  font-size: 0.72rem;
+  color: #5a695f;
+}
+.partner-list article {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  gap: 5vw;
+  padding: 3rem 0;
+  border-top: 1px solid var(--line);
+}
+.partner-list article > span {
+  color: var(--blue);
+  font: 3rem var(--serif);
+}
+.partner-list h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.35rem;
+}
+.partnership-paths {
+  padding: 8rem 7vw;
+  background: var(--sky);
+}
+.partnership-paths > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+}
+.partnership-paths article {
+  padding: 2rem;
+  border-left: 1px solid var(--line);
 }
 @media (max-width: 760px) {
   .rv-page-hero {
@@ -924,5 +1121,82 @@ textarea:focus-visible {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero > img {
+    object-position: 63% center;
+  }
+  .shade {
+    background: linear-gradient(
+      0deg,
+      rgba(7, 31, 22, 0.94),
+      rgba(7, 31, 22, 0.08)
+    );
+  }
+  .product-grid,
+  .farmer-journey,
+  .partner-list {
+    padding: 5rem 1.3rem;
+    gap: 4rem;
+  }
+  .featured-product,
+  .produce-card,
+  .photo-story {
+    grid-template-columns: 1fr;
+  }
+  .featured-product img {
+    grid-row: 1;
+  }
+  .produce-card img {
+    height: 420px;
+  }
+  .produce-card > div {
+    padding: 2rem;
+  }
+  .farmer-journey ol,
+  .impact-page-stats,
+  .impact-narrative,
+  .partnership-paths > div {
+    grid-template-columns: 1fr;
+  }
+  .farmer-journey li {
+    padding: 1.5rem 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .photo-story {
+    min-height: 0;
+  }
+  .photo-story img {
+    height: 480px;
+  }
+  .photo-story > div {
+    padding: 4rem 1.3rem;
+  }
+  .impact-page-stats {
+    padding: 5rem 1.3rem;
+  }
+  .impact-page-stats article {
+    padding: 2rem 0;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .impact-narrative,
+  .partnership-paths {
+    padding: 5rem 1.3rem;
+  }
+  .impact-outcomes {
+    grid-template-columns: 1fr;
+  }
+  .partner-list article {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .partnership-paths article {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 1.5rem 0;
   }
 }
